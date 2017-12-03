@@ -4,7 +4,8 @@
   "homepage": "https://github.com/david-dogneton/shiba-squad",
   "scripts": {
     "start": "babel-node --presets react,es2015 src/server.js",
-    "build": "webpack --config webpack-config.js"
+    "build": "webpack --config webpack-config.js",
+    "deploy": "npm run build && npm run start"
   },
   "author": "",
   "license": "ISC",

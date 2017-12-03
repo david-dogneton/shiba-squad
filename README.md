@@ -1,6 +1,8 @@
 # shiba-squad
 A simple Express/React app that introduces you to the amazing shiba squad.
 
+See [https://david-dogneton.github.io/shiba-squad/](https://david-dogneton.github.io/shiba-squad/)
+
 # build
 
 `npm run build`
