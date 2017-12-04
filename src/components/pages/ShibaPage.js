@@ -17,7 +17,7 @@ export default class ShibaPage extends React.Component {
         <Menu shibas={shibas}/>
         <div className="shiba">
           <div className="picture-container">
-            <img src={`/img/${shiba.image}`}/>
+            <img src={`../img/${shiba.image}`}/>
             <h2 className="name">{shiba.name}</h2>
           </div>
           <section className="description">
