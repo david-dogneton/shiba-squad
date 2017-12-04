@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { NavLink } from 'react-router-dom';
 
 export default class Menu extends React.Component {
     render() {
         return (
             <nav className="shibas-menu">
                 {this.props.shibas.map(shiba => {
-                    return <Link key={shiba.id} to={`/shiba/${shiba.id}`} activeClassName="active"> {shiba.name} </Link>;
+                    return <NavLink key={shiba.id} to={`/shiba/${shiba.id}`} activeclassname="active"> {shiba.name} </NavLink>;
                 })}
             </nav>
         );

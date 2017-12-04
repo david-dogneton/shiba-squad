@@ -10,7 +10,7 @@ svg{display:inline-flex}img{max-width:100%;display:block}
 
 @font-face {
   font-family: 'Bangers';
-  src: url('/fonts/Bangers-Regular.ttf')  format('truetype')
+  src: url('../fonts/Bangers-Regular.ttf')  format('truetype')
 }
 
 html {

@@ -1,16 +1,20 @@
-import React from 'react'
-import { Route, IndexRoute } from 'react-router'
-import Layout from './components/Layout';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import AppShell from './components/AppShell';
 import IndexPage from './components/pages/IndexPage';
 import ShibaPage from './components/pages/ShibaPage';
 import NotFoundPage from './components/pages/NotFoundPage';
 
-const routes = (
-  <Route path="/" component={Layout}>
-    <IndexRoute component={IndexPage}/>
-    <Route path="shiba/:id" component={ShibaPage}/>
-    <Route path="*" component={NotFoundPage}/>
-  </Route>
-);
-
-export default routes;
+export default class Routes extends React.Component {
+  render() {
+    return (
+      <AppShell>
+        <Switch>
+          <Route exact path='/' component={IndexPage} />
+          <Route exact path="/shiba/:id" component={ShibaPage} />
+          <Route component={NotFoundPage} />
+        </Switch>
+      </AppShell>
+    );
+  }
+}

@@ -1,4 +1,5 @@
-src/static/js/bundle.js
+src/static/js/
 node_modules/
 babel_cache/
 npm-debug.log*
+.vscode/

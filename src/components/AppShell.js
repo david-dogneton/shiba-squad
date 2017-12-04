@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
-export default class Layout extends React.Component {
+export default class AppShell extends React.Component {
   render() {
     return (
       <div className="app-container">
