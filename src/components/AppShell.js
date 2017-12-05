@@ -7,7 +7,7 @@ export default class AppShell extends React.Component {
       <div className="app-container">
         <header>
           <Link to="/">
-            <img className="logo" src="./img/logo-shiba-heroes.jpg"/>
+            <img className="logo" src="/assets/img/logo-shiba-heroes.jpg"/>
           </Link>
         </header>
         <div className="app-content">{this.props.children}</div>

@@ -1,7 +1,7 @@
 # shiba-squad
 A simple Express/React app that introduces you to the amazing shiba squad.
 
-See [https://david-dogneton.github.io/shiba-squad/](https://david-dogneton.github.io/shiba-squad/)
+Under the hood, we have an SPA with shared routing between backend and frontend and are hoping for much more like SSR and PWA.
 
 # build
 
