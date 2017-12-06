@@ -5,25 +5,25 @@ const shibas = [
     'id': 'ayame',
     'name': 'Ayame',
     'birth': '2016',
-    'image': 'ayame.jpg'
+    'image': 'ayame.png'
   },
   {
     'id': 'kimiko',
     'name': 'Kimiko',
     'birth': '2015',
-    'image': 'kimiko.jpg'
+    'image': 'kimiko.png'
   },
   {
     'id': 'tsuyu',
     'name': 'Tsuyu',
     'birth': '2017',
-    'image': 'tsuyu.jpg'
+    'image': 'tsuyu.png'
   },
   {
     'id': 'yutaka',
     'name': 'Yutaka',
     'birth': '2014',
-    'image': 'yutaka.jpg'
+    'image': 'yutaka.png'
   }
 ];
 

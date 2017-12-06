@@ -12,14 +12,14 @@ const server = new Server(app);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(compression());
-app.use('/assets', express.static(path.join(__dirname, 'static')));
+app.use('/', express.static(path.join(__dirname, 'static')));
 
 app.get('*', (req, res) => {
     const context = {};
 
     const appWithRouter = (
-        <StaticRouter basename="/shiba-squad" location={req.url} context={context}>
-            <Routes />
+        <StaticRouter location={req.url} context={context}>
+            <Routes/>
         </StaticRouter>
     );
 
@@ -29,6 +29,12 @@ app.get('*', (req, res) => {
     }
 
     const markup = ReactDOMServer.renderToString(appWithRouter);
+
+    // We will handle cache through service worker so we need to cancel it at server level.
+    if (req.url.indexOf("/assets") === 0) {
+        res.setHeader("Cache-Control", "public, max-age=60");
+        res.setHeader("Expires", new Date(Date.now() + 60).toUTCString());
+    }
 
     res.render('index', { markup });
 });

@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiba Squad - A Universal JavaScript demo application with React</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-  </head>
-  <body>
-    <div id="main"><%- markup -%></div>
-    <script src="/assets/js/bundle.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Mobile scaling -->
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <!-- SEO -->
+  <title>Shiba Squad</title>
+  <meta name="description" content="A Universal JS Progressive Web App" />
+  <link rel="icon" type="image/png" href="/favicon.ico">
+  <!-- See https://goo.gl/OOhYW5 -->
+  <link rel="manifest" href="/manifest.json">
+  <!-- See https://goo.gl/qRE0vM -->
+  <meta name="theme-color" content="#446CB3">
+  <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Shiba Squad App">
+  <meta name="application-short-name" tcontent="Shiba Squad">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Shiba Squad App">
+
+  <!-- Homescreen icons -->
+  <link rel="shortcut icon" sizes="144x144" href="/img/app-icon/app-icon-144.png}">
+  <link rel="shortcut icon" sizes="192x192" href="/img/app-icon/app-icon-192.png}">
+  <link rel="apple-touch-icon" href="/img/app-icon/app-icon-48.png}">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/app-icon/app-icon-72.png}">
+  <link rel="apple-touch-icon" sizes="96x96" href="/img/app-icon/app-icon-96.png}">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/app-icon/app-icon-144.png}">
+  <link rel="apple-touch-icon" sizes="192x192" href="/img/app-icon/app-icon-192.png}">
+
+  <!-- Tile icon for Windows 8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="/img/app-icon/app-icon-144.png}">
+  <meta name="msapplication-TileColor" content="#446CB3">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="main">
+    <%- markup -%>
+  </div>
+  <script src="/js/bundle.js"></script>
+</body>
+
 </html>

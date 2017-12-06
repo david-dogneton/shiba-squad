@@ -1,7 +1,9 @@
 # shiba-squad
 A simple Express/React app that introduces you to the amazing shiba squad.
 
-Under the hood, we have an SPA with shared routing between backend and frontend and are hoping for much more like SSR and PWA.
+Under the hood, we have a SPA with shared routing between backend and frontend.
+
+It is also a Progressive Web App following the App Shell architecture.
 
 # build
 

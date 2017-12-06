@@ -7,13 +7,13 @@ export default class AppShell extends React.Component {
       <div className="app-container">
         <header>
           <Link to="/">
-            <img className="logo" src="/assets/img/logo-shiba-heroes.jpg"/>
+            <img className="logo" src="/img/app-icon/app-icon-144.png"/>
           </Link>
         </header>
         <div className="app-content">{this.props.children}</div>
         <footer>
           <p>
-            This is a demo app to showcase universal rendering and routing with <strong>React</strong> and <strong>Express</strong>.
+            This is a Progressive Web App that showcases universal JS rendering and routing with <strong>React</strong>, <strong>Node</strong> and <strong>Express</strong>.
           </p>
         </footer>
       </div>

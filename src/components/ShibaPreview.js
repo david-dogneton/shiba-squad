@@ -6,7 +6,7 @@ export default class ShibaPreview extends React.Component {
     return (
       <Link to={`/shiba/${this.props.id}`}>
         <div className="shiba-preview">
-          <img src={`/assets/img/${this.props.image}`}/>
+          <img src={`/img/shiba-${this.props.image}`}/>
           <h2 className="name">{this.props.name}</h2>
         </div>
       </Link>
